@@ -1,0 +1,45 @@
+@media (min-width: 1201px) and (max-width: 1366px) {
+
+
+
+}
+
+@media(max-width: 991px) {
+	.description_img_left, .description_img_right{
+		position: relative;
+		height: 460px;
+		width: 100%;
+		z-index: 1;
+	}
+	.project_description{
+		margin-top: 30px;
+	}
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+	.nivoSlider img  {
+		height: 430px !important;
+	}
+	.sider_text .first_heading{
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 18px;	
+	}
+	.explore_btn {
+	  font-size: 13px;
+	  padding: 12px 17px;
+	}	
+	h2,.section_title h2 {
+	  font-size: 25px;
+	}	
+	h4{
+		font-size: 16px;
+	}
+	.statistics-content {
+	  margin-bottom: 30px;
+	}	
+	#contact .right{
+		margin-top: 30px;
+	}
+}
