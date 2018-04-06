@@ -91,7 +91,7 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 }
 
 @media only screen and (max-width:767px){
-	body{font-size:20px}
+	body{font-size:14px}
 	.text-right{text-align:left}
 	.codepost-head{margin-right:-15px}
 	.codepost-head .text-right{text-align:right}
