@@ -104,7 +104,7 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 	p{padding-top:50px;line-height:20px}
 	.intro .btn-area .btn{font-size:15px;margin-left:10px}
 	.intro img{width:51%}
-	#main_nav{position:absolute;background:#ececec;z-index:999;width:100%;top:0;left:0}
+	#main_nav{position:absolute;background:#ececec;z-index:999;width:100%;top:3px;left:0}
 	ul.nav.navbar-nav,
 	ul.nav.navbar-nav li{display:block}
 }
