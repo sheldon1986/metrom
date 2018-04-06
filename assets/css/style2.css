@@ -22,13 +22,14 @@ h2, h3, p{color:#fff}
 h2{font-size:42px}
 h3{font-size:22px;margin-bottom:0}
 p{padding-top:100px;line-height:28px}
-#fullpage img{width:100%;height:auto}
+#fullpage img{width:100%;height:auto;margin-top:30px}
 .col-lg-12 .text-right{padding-right:15px}
 .codepost-head{margin:10px 0}
-.simple img{padding-top:0}
+.container{padding-top:100px}
+.header-top .container{padding-top:0}
 .intro p,
 .intro img{padding:0}
-#fullpage .intro img{width:auto;height:auto}
+#fullpage .intro img{width:auto;height:135px;padding:0}
 .intro h3{font-size:26px;padding:10px 0}
 .intro .btn-area{padding-top:20px}
 .intro .btn-area .btn{font-size:20px;text-transform:uppercase;margin-left:20px;padding-bottom:3px}
@@ -41,12 +42,13 @@ p{padding-top:100px;line-height:28px}
 .multi-cloud p{color:#444}
 .intro h3{margin-bottom:0}
 
+
 /* --------------------------------------------------------
 #         Start Home CSS
 -----------------------------------------------------------*/
 
 .header-top{position:fixed;left:0;right:0;top:0;width:100%;background:#fff;height:100px;z-index:999999}
-.header-top .logo{position:absolute;top:0;left:0;height:40px}
+.header-top .logo{height:40px}
 .header-top .logo img{max-height:70%}
 
 #main_nav li a:hover,
@@ -73,20 +75,36 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {width: 16px;height:16px;margin:-8px 0 0 -8px;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;	border:1px solid #24221F}
 
+@media only screen and (max-width:1024px){
+	.fp-tableCell{display:block}
+	.container{padding-top:30%}
+	.header-top .container{padding-top:0}
+}
+
+@media only screen and (max-width:768px){
+	.container{padding-top:40%}
+	#fullpage img{width:auto;height:200px}
+	.img-wrap{text-align:center}
+	#fullpage img{margin-top:100px}
+	h2{font-size:24px}
+	h3{font-size:18px}
+}
+
 @media only screen and (max-width:767px){
 	body{font-size:20px}
-	.header_area .logo img{margin-top:10px}
-	.docker .img-wrap img{padding-top:0}
+	.text-right{text-align:left}
 	.codepost-head{margin-right:-15px}
+	.codepost-head .text-right{text-align:right}
 	.navbar-default .navbar-toggle{margin-right:0}
 	.header_area .logo{position:static}
+	#fullpage img{margin-top:50px}
 	h2{font-size:25px}
 	h3{font-size:16px;margin-bottom:0}
 	.intro h3{font-size:16px}
 	p{padding-top:50px;line-height:20px}
 	.intro .btn-area .btn{font-size:15px;margin-left:10px}
 	.intro img{width:51%}
-	#main_nav{position:absolute;background:#ececec;z-index:999;width:100%;top:10px;left:0}
+	#main_nav{position:absolute;background:#ececec;z-index:999;width:100%;top:0;left:0}
 	ul.nav.navbar-nav,
 	ul.nav.navbar-nav li{display:block}
 }
