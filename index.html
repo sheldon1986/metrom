@@ -42,13 +42,13 @@
   					<nav id="main_nav" class="main_menu navbar-right">
   						<div id="navbar" class="navbar-collapse collapse main_menu">
   							<ul id="nav" class="nav navbar-nav">
-  								<li><a href="#">Intro</a></li>
-									<!--
-									<li data-menuanchor="secondSection"><a href="#secondSection" title="second Section">Intro</a></li> -->
-  								<li><a href="#" tartget="_blank">Docs</a></li>
-  								<li><a href="https://www.facebook.com/groups/metrom.codepost" tartget="_blank">Comunity</a></li>
-  								<!-- <li><a href="">Download</a></li> -->
-  								<li><a href="https://github.com/code-post/Bacelos" tartget="_blank">GitHub</a></li>
+									<li data-menuanchor="secondSection"><a href="#secondSection" title="second Section">Intro</a></li>
+  								<li data-menuanchor="thirdSection"><a href="#thirdSection" title="third Section">PaaS</a></li>
+									<li data-menuanchor="fourthSection"><a href="#fourthSection" title="fourth Section">Docker</a></li>
+									<li data-menuanchor="fifthSection"><a href="#fifthSection" title="fifth Section">CI/CD</a></li>
+									<li data-menuanchor="sixthSection"><a href="#sixthSection" title="sixth Section">Phoenix-Server</a></li>
+									<li data-menuanchor="seventhSection"><a href="#seventhSection" title="seventh Section">Multi-cloud</a></li>
+									<li data-menuanchor="eighthSection"><a href="#eighthSection" title="eighth Section">Loadmap</a></li>
   							</ul>
   						</div>
   					</nav>
@@ -67,9 +67,9 @@
             <h3 class="text-center wow fadeInUp">Self-serving system for the Hybrid-Cloud development environment</h3>
             <p class="text-center wow fadeInUp">“You can make easy the development environment build up with Phoenix server pattern by the Metrom”</p>
             <div class="text-center btn-area wow fadeInUp">
-              <a href="#" class="btn btn-primary">Get Started</a>
+              <a href="#secondSection" title="second Section" class="btn btn-primary">INTRO</a>
               <!-- <a href="#" class="btn btn-default">SIGN IN</a> -->
-              <a href="#" class="btn btn-default">HOW TO USE</a>
+              <a href="mailto:codepost@code-post.com" class="btn btn-default">Contact</a>
             </div>
           </div>
         </div>
@@ -205,6 +205,28 @@
 				</div>
 			</div>
     </section>
+
+		<section class="vertical-scrolling">
+      <div class="container loadmap">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-right wow fadeInUp">Loadmap</h2>
+						<h3 class="text-right wow fadeInUp">
+
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5">
+					</div>
+					<div class="col-md-7">
+						<p class="wow fadeInUp">
+
+						</p>
+					</div>
+				</div>
+			</div>
+    </section>
   </div>
 
 
@@ -221,12 +243,12 @@
 
     // fullpage customization
     $('#fullpage').fullpage({
-      sectionsColor: ['#ffffff', '#3880B0', '#4c4c4c', '#235576', '#4c4c4c', '#0E2B3A', '#EBEBEB'],
+      sectionsColor: ['#ffffff', '#3880B0', '#4c4c4c', '#235576', '#4c4c4c', '#0E2B3A', '#EBEBEB', '#0E2B3A'],
       sectionSelector: '.vertical-scrolling',
       navigation: true,
       slidesNavigation: true,
       controlArrows: false,
-      anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection'],
+      anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection', 'eighthSection'],
       menu: '#menu',
 
       afterLoad: function(anchorLink, index) {
