@@ -155,6 +155,6 @@ button:hover, button:focus,
 }
 
 /* 아이패드 세로모드 일 경우 */
-@media only screen and (min-width:1668px) and (orientation:portrait) {
+@media only screen and (min-width:2224px) and (orientation:portrait) {
 	#fullpage img{width:auto;height:200px;border:1px solid #fff}
 }
