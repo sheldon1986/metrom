@@ -17,46 +17,22 @@ button:focus,
 .radon:hover,
 .radon:focus{text-decoration:none;color:#fff;border-color:#0995a1}
 
-.padding img{padding-top:30px;width:100%;height:auto}
 
 h2, h3, p{color:#fff}
 h2{font-size:42px}
 h3{font-size:22px;margin-bottom:0}
 p{padding-top:100px;line-height:28px}
-
+#fullpage img{width:100%;height:auto;margin-top:30px}
 .col-lg-12 .text-right{padding-right:15px}
 .codepost-head{margin:10px 0}
-.intro{height:100%}
-.simple{background-color:#3880B0}
-.paas{background-color:#4c4c4c}
-.docker{background-color:#235576}
-.cicd{background-color:#4c4c4c}
-.phoenix{background-color:#0E2B3A}
-.multi-cloud{background-color:#EBEBEB}
-
-.pos{position:absolute;left:50%;top:50%}
-.intro .pos{height:364px;margin-top:-182px}
-.simple .pos{height:480px;margin-top:-240px}
-.paas .pos{height:412px;margin-top:-251px}
-.docker .pos{height:514px;margin-top:-257px}
-.cicd .pos{height:610px;margin-top:-300px}
-.phoenix .pos{height:650px;margin-top:-200px}
-.multi-cloud .pos{height:498px;margin-top:-249px}
-
-.simple,
-.paas,
-.docker,
-.cicd,
-.phoenix,
-.multi-cloud{position:relative;height:calc(100% - 100px)}
-
-.simple img{padding-top:0}
+.container{padding-top:100px}
+.header-top .container{padding-top:0}
 .intro p,
 .intro img{padding:0}
-.intro img{width:auto;height:auto}
+#fullpage .intro img{width:auto;height:185px;padding:0}
 .intro h3{font-size:26px;padding:10px 0}
 .intro .btn-area{padding-top:20px}
-.intro .btn-area .btn{font-size:20px;text-transform:uppercase;margin-left:20px;padding-bottom:3px}
+.intro .btn-area .btn{font-size:20px;/*text-transform:uppercase;*/margin-left:20px;padding-bottom:5px}
 .intro .btn-area .btn:first-child{margin-left:0}
 .intro h2,
 .intro h3,
@@ -66,13 +42,14 @@ p{padding-top:100px;line-height:28px}
 .multi-cloud p{color:#444}
 .intro h3{margin-bottom:0}
 
+
 /* --------------------------------------------------------
 #         Start Home CSS
 -----------------------------------------------------------*/
 
-.header_area{position:fixed;left:0;right:0;top:0;width:100%;background:#fff;height:100px;z-index:999999;}
-.header_area .logo{position:absolute;top:-11px;left:0;height:40px}
-.header_area .logo img{max-height:100%}
+.header-top{position:fixed;left:0;right:0;top:0;width:100%;background:#fff;height:100px;z-index:999999}
+.header-top .logo{height:40px}
+.header-top .logo img{max-height:70%}
 
 #main_nav li a:hover,
 #main_nav li a:focus,
@@ -86,71 +63,81 @@ ul.nav.navbar-nav li a:hover{text-decoration:none;background:none}
 ul.nav.navbar-nav li a:after,
 ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibility:hidden;border:1px solid rgba(255, 255, 255, 0);bottom:0px;content:" ";display:block;margin:0 auto;position:relative;-webkit-transition:all 280ms ease-in-out;transition:all 280ms ease-in-out;width:0}
 
+.main_nav{z-index:9999}
+
 .logo{display:inline-block}
 .navbar-header{display:inline-block;text-align:right;float:right}
 
-/* ==========================================================================
-   23. SCROLL TO TOP
-   ========================================================================== */
-.btn-top{display:none;font-size:25px;z-index:999;position:fixed;bottom:60px;right:20px;background:rgb(0, 0, 0);background-color:#aaa;color:#fff;width:50px;height:50px;display:block;text-decoration:none;-webkit-border-radius:35px;-moz-border-radius:35px;border-radius:35px;display:none}
-.btn-top:hover{background-color:rgba(65, 65, 65, 0.65);color:#fff}
+.loadmap .movie{position:relative;height:0;padding-bottom:60%}
+.loadmap .movie iframe{position:absolute;width:100%;height:100%;left:0}
 
-/* --------------------------------------------------------
-#         End Home CSS
------------------------------------------------------------*/
+#fp-nav{display:none !important}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {background:white;width:8px;height:8px;margin:-4px 0 0 -4px}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {width: 16px;height:16px;margin:-8px 0 0 -8px;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;	border:1px solid #24221F}
+
+@media only screen and (max-width:1024px){
+	.fp-tableCell{display:block}
+	.container{padding-top:30%}
+	ul.nav.navbar-nav li a{font-size:14px}
+	.header-top .container{padding-top:0}
+}
+
+@media only screen and (max-width:768px){
+	.container{padding-top:40%}
+	#fullpage img{width:auto;height:200px}
+	.img-wrap{text-align:center}
+	#fullpage img{margin-top:100px}
+	h2{font-size:24px}
+	h3{font-size:18px}
+}
+.navbar-default .navbar-toggle{border:0}
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+button:hover, button:focus,
+.radon:hover, .radon:focus{border:0}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background:transparent}
 
 @media (min-width:768px) {
-		.pos{width:750px;margin-left:-355px}
+  #main_nav button.close{display:none}
 }
-@media (min-width:992px) {
-		.pos{width:970px;margin-left:-485px}
-}
-@media (min-width:1200px) {
-    .pos{width:1170px;margin-left:-585px}
-}
-
-@media (max-width:1025px) {
-  .pos{position:static;height:auto !important;margin:0 !important}
-	.intro .pos{margin-top:150px !important}
-	.pos h2{padding-top:100px}
-	.pos .img-wrap {text-align:center}
-	.pos .img-wrap img{height:300px;width:auto}
-	.pos h2{padding-top:40px}
-}
-
 @media only screen and (max-width:767px){
-	.pos{position:static;height:auto !important;margin:0 !important}
-	.intro .pos{margin-top:130px !important}
-	.pos .img-wrap img{height:300px}
-	.docker .img-wrap img{padding-top:0}
-	.pos h2{padding-top:30px}
+	body{font-size:14px}
+	#main_nav{opacity:0}
+	.open #main_nav{opacity:1;position:fixed;bottom:0;top:0;background:rgb(56,128,176) !important}
+	ul.nav.navbar-nav{margin:0;position:absolute;top:50%;left:0;margin-top:-200px}
+	ul.nav.navbar-nav li a{font-size:2em;line-height:2em;color:#fff}
+	ul.nav.navbar-nav li a:hover{color:#fff !important;opacity:.4;transition:all 0.5s}
+	.text-right{text-align:left}
 	.codepost-head{margin-right:-15px}
+	.codepost-head .text-right{text-align:right}
 	.navbar-default .navbar-toggle{margin-right:0}
-	.header_area .logo{position:static}
+	.header-top .logo{margin-top:8px}
+	#fullpage img{margin-top:50px;width:auto;height:100px}
+	#fullpage .intro img{width:auto;height:120px}
 	h2{font-size:25px}
 	h3{font-size:16px;margin-bottom:0}
 	.intro h3{font-size:16px}
-	p{padding-top:50px;line-height:28px}
+	p{padding-top:50px;line-height:20px}
 	.intro .btn-area .btn{font-size:15px;margin-left:10px}
 	.intro img{width:51%}
-	#main_nav{position:absolute;background:#ececec;z-index:999;width:100%;top:10px;left:0}
+
+	#main_nav{position:absolute;background:#ececec;z-index:999;width:100%;top:3px;left:0}
+	#main_nav button.close{position:absolute;top:29px;right: 20px;color:#fff;text-transform:unset;opacity:.8}
+	#main_nav button span{width:40px !important;margin-top:0 !important;background-color:#fff;display:block;width:22px;height:2px;border-radius:1px;transition:all 0.5s}
+	#main_nav button span:first-child{opacity:0}
+	#main_nav button span:nth-of-type(2){-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+	#main_nav button span:nth-of-type(3){-webkit-transform:rotate(-45deg);transform: rotate(-45deg)}
+
 	ul.nav.navbar-nav,
 	ul.nav.navbar-nav li{display:block}
 }
-@media only screen and (max-width:414px){
-	.intro .pos{margin-top:180px !important}
-	.pos h2{padding-top:70px}
-	.pos .img-wrap img{height:200px}
-}
 @media only screen and (max-width:375px){
 	body{font-size:13px}
-	.intro .pos{margin-top:150px !important}
-	.pos h2{padding-top:40px}
 	h2{font-size:18px}
 	h3{font-size:13px}
-}
-@media only screen and (max-width:340px){
-	.intro .pos{margin-top:120px !important}
-	.pos .img-wrap img{height:80px}
-
 }
