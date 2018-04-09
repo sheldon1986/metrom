@@ -146,6 +146,7 @@ button:hover, button:focus,
 	h3{font-size:13px}
 }
 
+/* 모바일 가로모드 일 경우 */
 @media only screen and (max-width:767px) and (orientation:landscape) {
 	.container {padding-top:120px}
 	h2{font-size:14px}
@@ -154,7 +155,7 @@ button:hover, button:focus,
 	.loadmap .movie iframe{height:130px}
 }
 
-/* 아이패드 세로모드 일 경우 */
-@media only screen and (min-width:2224px) and (orientation:portrait) {
+/* 세로모드 일 경우 */
+@media only screen and (min-width:834px) and (orientation:portrait) {
 	#fullpage img{width:auto;height:200px;border:1px solid #fff}
 }
