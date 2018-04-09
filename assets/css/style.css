@@ -136,7 +136,7 @@ button:hover, button:focus,
 	#main_nav button span:first-child{opacity:0}
 	#main_nav button span:nth-of-type(2){-webkit-transform:rotate(45deg);transform:rotate(45deg)}
 	#main_nav button span:nth-of-type(3){-webkit-transform:rotate(-45deg);transform: rotate(-45deg)}
-
+img-wrap
 	ul.nav.navbar-nav,
 	ul.nav.navbar-nav li{display:block}
 }
@@ -156,7 +156,8 @@ button:hover, button:focus,
 }
 
 /* 세로모드 일 경우 */
-@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (orientation:portrait){
+@media only screen and (min-device-width:770px) and (max-device-width:2000px) and (orientation:portrait){
 	.container{padding-top:40%}
-	#fullpage img{width:auto;height:200px}
+	#fullpage img{width:auto;height:200px;margin-top:50px}
+	.img-wrap{text-align:center}
 }
