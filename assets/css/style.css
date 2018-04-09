@@ -69,7 +69,7 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 .navbar-header{display:inline-block;text-align:right;float:right}
 
 .loadmap .movie{position:relative;height:0;padding-bottom:60%}
-.loadmap .movie iframe{position:absolute;width:100%;height:100%;left:0}
+.loadmap .movie iframe{position:absolute;width:100%;height:80%;left:0}
 
 #fp-nav{display:none !important}
 #fp-nav ul li a span,
