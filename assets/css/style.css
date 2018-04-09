@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-body{font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;color:#8a8a8a;font-size:18px}
+body{font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;color:#8a8a8a;font-size:14px}
 h1, h2, h3, h4, h5, h6{color:#333;margin:0 0 15px;font-weight:700;line-height:normal;letter-spacing:1px}
 a{color:#444;text-decoration:none}
 a:hover, a:focus{color:#0182b4;outline:none;text-decoration:none}
