@@ -156,6 +156,7 @@ button:hover, button:focus,
 }
 
 /* 세로모드 일 경우 */
-@media only screen and (min-width:834px) and (orientation:portrait) {
-	#fullpage img{width:auto;height:200px;border:1px solid #fff}
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (orientation:portrait){
+	.container{padding-top:40%}
+	#fullpage img{width:auto;height:200px}
 }
