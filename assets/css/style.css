@@ -160,4 +160,5 @@ img-wrap
 	.container{padding-top:40%}
 	#fullpage img{width:auto;height:200px;margin-top:50px}
 	.img-wrap{text-align:center}
+	.container.loadmap{padding-top:40%}
 }
