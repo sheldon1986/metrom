@@ -57,7 +57,7 @@ p{padding-top:100px;line-height:28px}
 #main_nav ul.nav > li ul li:hover ul.sub-menu{opacity:1;visibility:visible}
 .navbar-default{background:transparent}
 ul.nav.navbar-nav{display:table;width:100%}
-ul.nav.navbar-nav li{display:table-cell;text-align:center;vertical-align:middle}
+ul.nav.navbar-nav li{display:table-cell;text-align:center;vertical-align:middle;font-weight:bold;color:#4c4a4a}
 ul.nav.navbar-nav li a{display:block;padding:0;line-height:32px;position:relative;width:100%;margin-right:1.5em}
 ul.nav.navbar-nav li a:hover{text-decoration:none;background:none}
 ul.nav.navbar-nav li a:after,
