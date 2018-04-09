@@ -32,7 +32,7 @@ p{padding-top:100px;line-height:28px}
 #fullpage .intro img{width:auto;height:185px;padding:0}
 .intro h3{font-size:26px;padding:10px 0}
 .intro .btn-area{padding-top:20px}
-.intro .btn-area .btn{font-size:20px;/*text-transform:uppercase;*/margin-left:20px;padding-bottom:5px}
+.intro .btn-area .btn{font-size:20px;text-transform:uppercase;margin-left:20px;padding-bottom:5px}
 .intro .btn-area .btn:first-child{margin-left:0}
 .intro h2,
 .intro h3,
@@ -63,8 +63,6 @@ ul.nav.navbar-nav li a:hover{text-decoration:none;background:none}
 ul.nav.navbar-nav li a:after,
 ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibility:hidden;border:1px solid rgba(255, 255, 255, 0);bottom:0px;content:" ";display:block;margin:0 auto;position:relative;-webkit-transition:all 280ms ease-in-out;transition:all 280ms ease-in-out;width:0}
 
-.main_nav{z-index:9999}
-
 .logo{display:inline-block}
 .navbar-header{display:inline-block;text-align:right;float:right}
 
@@ -83,7 +81,6 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 @media only screen and (max-width:1024px){
 	.fp-tableCell{display:block}
 	.container{padding-top:30%}
-	ul.nav.navbar-nav li a{font-size:14px}
 	.header-top .container{padding-top:0}
 }
 
@@ -95,23 +92,9 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 	h2{font-size:24px}
 	h3{font-size:18px}
 }
-.navbar-default .navbar-toggle{border:0}
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-button:hover, button:focus,
-.radon:hover, .radon:focus{border:0}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background:transparent}
 
-@media (min-width:768px) {
-  #main_nav button.close{display:none}
-}
 @media only screen and (max-width:767px){
 	body{font-size:14px}
-	#main_nav{opacity:0}
-	.open #main_nav{opacity:1;position:fixed;bottom:0;top:0;background:rgb(56,128,176) !important}
-	ul.nav.navbar-nav{margin:0;position:absolute;top:50%;left:0;margin-top:-200px}
-	ul.nav.navbar-nav li a{font-size:2em;line-height:2em;color:#fff}
-	ul.nav.navbar-nav li a:hover{color:#fff !important;opacity:.4;transition:all 0.5s}
 	.text-right{text-align:left}
 	.codepost-head{margin-right:-15px}
 	.codepost-head .text-right{text-align:right}
@@ -125,14 +108,7 @@ button:hover, button:focus,
 	p{padding-top:50px;line-height:20px}
 	.intro .btn-area .btn{font-size:15px;margin-left:10px}
 	.intro img{width:51%}
-
 	#main_nav{position:absolute;background:#ececec;z-index:999;width:100%;top:3px;left:0}
-	#main_nav button.close{position:absolute;top:29px;right: 20px;color:#fff;text-transform:unset;opacity:.8}
-	#main_nav button span{width:40px !important;margin-top:0 !important;background-color:#fff;display:block;width:22px;height:2px;border-radius:1px;transition:all 0.5s}
-	#main_nav button span:first-child{opacity:0}
-	#main_nav button span:nth-of-type(2){-webkit-transform:rotate(45deg);transform:rotate(45deg)}
-	#main_nav button span:nth-of-type(3){-webkit-transform:rotate(-45deg);transform: rotate(-45deg)}
-
 	ul.nav.navbar-nav,
 	ul.nav.navbar-nav li{display:block}
 }
