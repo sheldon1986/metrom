@@ -80,10 +80,6 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {width: 16px;height:16px;margin:-8px 0 0 -8px;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;	border:1px solid #24221F}
 
-/* 아이패드 세로모드 일 경우 */
-@media (min-width:1668px) and (min-height:2264px) {
-	#fullpage img{width:auto;height:200px}
-}
 
 @media only screen and (max-width:1024px){
 	.fp-tableCell{display:block}
@@ -148,4 +144,17 @@ button:hover, button:focus,
 	body{font-size:13px}
 	h2{font-size:18px}
 	h3{font-size:13px}
+}
+
+@media only screen and (max-width:767px) and (orientation:landscape) {
+	.container {padding-top:120px}
+	h2{font-size:14px}
+	h3{font-size:13px}
+	p{padding-top:0px}
+	.loadmap .movie iframe{height:130px}
+}
+
+/* 아이패드 세로모드 일 경우 */
+@media only screen and (min-width:1668px) and (orientation:portrait) {
+	#fullpage img{width:auto;height:200px;border:1px solid #fff}
 }
