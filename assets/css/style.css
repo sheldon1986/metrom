@@ -80,6 +80,11 @@ ul.nav.navbar-nav li a:before{-webkit-backface-visibility:hidden;backface-visibi
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {width: 16px;height:16px;margin:-8px 0 0 -8px;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;	border:1px solid #24221F}
 
+/* 아이패드 세로모드 일 경우 */
+@media (min-width:1668px) and (min-height:2264px) {
+	#fullpage img{width:auto;height:200px}
+}
+
 @media only screen and (max-width:1024px){
 	.fp-tableCell{display:block}
 	.container{padding-top:20%}
